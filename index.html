@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Ventanas Glassmorph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+    <div class="contenedor">
+        
+        <header>
+            <h1>Generador de Ventanas Glassmorph</h1>
+            <p>Crea un Efecto Glassmorph para CSS, Sass y TailwindCSS</p>
+        </header>
+        <div class="controles">
+            <div class="grupo-control">
+                <label for="transparencia">Transparencia</label>
+                <input type="range" id="transparencia" min="0" max="1" step="0.1" value="0.5">
+            </div>
+            <div class="grupo-control">
+                <label for="desenfoque">Desenfoque</label>
+                <input type="range" id="desenfoque" min="0" max="20" step="1" value="10">
+            </div>
+            <div class="grupo-control">
+                <label for="color">Color del Borde</label>
+                <input type="color" id="color" value="#ffffff">
+            </div>
+            <div class="grupo-control">
+                <label for="borde">Borde</label>
+                <input type="range" id="borde" min="0" max="10" step="1" value="1">
+            </div>
+            <div class="grupo-control">
+                <label for="color-fondo">Color de Fondo</label>
+                <input type="color" id="color-fondo" value="#ffffff">
+            </div>
+            <div class="grupo-control">
+                <label for="radio-borde">Radio del Borde</label>
+                <input type="range" id="radio-borde" min="0" max="50" step="1" value="15">
+            </div>
+            <div class="grupo-control">
+                <label for="sombra-caja">Intensidad de la Sombra</label>
+                <input type="range" id="sombra-caja" min="0" max="50" step="1" value="30">
+            </div>
+        </div>
+        <div class="vista-previa" id="vista-previa">
+            <div class="ventana-glassmorph" id="ventana-glassmorph"></div>
+        </div>
+        <div class="codigo-generado">
+            <h2>Código Generado</h2>
+            <h3>CSS</h3>
+            <textarea id="css-generado" readonly></textarea>
+            <button id="copiar-css">Copiar CSS</button>
+
+            <h3>SASS</h3>
+            <textarea id="sass-generado" readonly></textarea>
+            <button id="copiar-sass">Copiar SASS</button>
+
+            <h3>Tailwind</h3>
+            <textarea id="tailwind-generado" readonly></textarea>
+            <button id="copiar-tailwind">Copiar Tailwind</button>
+            <button id="copiar-todo">Copiar Todo el Código</button>
+        </div>
+        <footer>
+            <p>Con ❤ programado por <a href="https://luigiadducci.netlify.app" style="color: white;">Luigi Adducci</a> &copy;2024 </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
